@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { JugadorComponent } from '../jugador/jugador.component';
 
 @Component({
   selector: 'app-equipo',
@@ -13,9 +15,35 @@ export class EquipoComponent implements OnInit {
     {value: 1, name: 'Manuel Vargas'},
     {value: 2, name: 'Carlos Matute'},
   ]
-  constructor() { }
+
+  listJugadores: any = [
+    {posicion: 'Delantero', nombre: 'Cristiano Ronaldo'},
+    {posicion: 'Delantero', nombre: 'Messi'},
+    {posicion: 'Delantero', nombre: 'Neymar'},
+  ]
+
+  titleModal = '';
+
+  constructor(
+    private dialog: MatDialog
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  editarJugador( jugador: any) {
+    this.titleModal = 'Editar Jugador';
+    const dialogEditaTasa = this.dialog.open(JugadorComponent, {
+      width: '670px',
+      height: '90%',
+      data: {
+        jugador: jugador
+      }
+    });
+  }
+
+  eliminarJugador(jugador: any) {
+    console.log("Eliminar jugador", jugador);
   }
 
 }

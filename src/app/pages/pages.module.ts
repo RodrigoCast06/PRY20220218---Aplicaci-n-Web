@@ -7,6 +7,8 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { SharedModule } from '../shared/shared.module';
 import { PagesComponent } from './pages.component';
+import { JugadorComponent } from './jugador/jugador.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 
@@ -15,7 +17,8 @@ import { PagesComponent } from './pages.component';
     EquipoComponent,
     AnalisisComponent,
     ResultadoComponent,
-    PagesComponent
+    PagesComponent,
+    JugadorComponent
   ],
   exports: [
     PagesComponent,
@@ -27,7 +30,8 @@ import { PagesComponent } from './pages.component';
     CommonModule,
     FormsModule,
     SharedModule,
-    RouterModule
+    RouterModule,
+    MatDialogModule
   ]
 })
 export class PagesModule { }

@@ -1,0 +1,74 @@
+<div class="card">
+    <div class="card-header" style="background-color:lightsteelblue;">
+        <span style="float: left; margin-top: 10px;">Análisis Jugador</span>
+    </div>
+    <div class="card-body">
+        <div class="input-w">
+            <label for="jugadorI">Nombre del Jugador</label>
+            <input id="jugadorI" type="text" [(ngModel)]="jugador.nombre"/>
+        </div>
+        <div class="datosArtefactos">
+            <h3>DATOS DE ARTEFACTO IOT</h3>
+
+            <div class="input-w">
+                <label for="pesoC">Peso Corporal </label>
+                <input id="pesoC" type="number"/>
+                <select
+                class="selectArte block"
+                >
+                    <option value='1'>Pésimo</option>
+                    <option value='2'>Regular</option>
+                    <option value='3'>Óptimo</option>
+                </select>
+            </div>
+
+            <div class="input-w">
+                <label for="distancia">Distancia Recorrida </label>
+                <input id="distancia" type="number"/>
+                <select
+                class="selectArte block"
+                >
+                    <option value='1'>Pésimo</option>
+                    <option value='2'>Regular</option>
+                    <option value='3'>Óptimo</option>
+                </select>
+            </div>
+
+            <div class="input-w">
+                <label for="calorias">Consumo de Calorias </label>
+                <input id="calorias" type="number"/>
+                <select
+                class="selectArte block"
+                >
+                    <option value='1'>Pésimo</option>
+                    <option value='2'>Regular</option>
+                    <option value='3'>Óptimo</option>
+                </select>
+            </div>
+            
+            <div class="input-w">
+                <label for="ritmoC">Media ritmo Cardiaco</label>
+                <input id="ritmoC" type="number"/>
+                <select
+                class="selectArte block"
+                >
+                    <option value='1'>Pésimo</option>
+                    <option value='2'>Regular</option>
+                    <option value='3'>Óptimo</option>
+                </select>
+            </div>
+
+            <div class="input-w">
+                <label for="tiempoJ">Tiempo Jugado</label>
+                <input id="tiempoJ" type="number"/>
+                <select
+                class="selectArte block"
+                >
+                    <option value='1'>Pésimo</option>
+                    <option value='2'>Regular</option>
+                    <option value='3'>Óptimo</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>

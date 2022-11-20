@@ -1,0 +1,18 @@
+.input-w label, .input-w input {
+    float: none; /* if you had floats before? otherwise inline-block will behave differently */
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;  
+}
+
+.input-w label {
+    width: 150px;
+}
+
+.datosArtefactos {
+    padding-top: 40px;
+}
+
+.selectArte{
+    width: 100px;
+}
